@@ -1,0 +1,408 @@
+CREATING A PORTOFILE
+ HTML CODE 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Marachekku Oil | Cold-Pressed Oils</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="https://ibb.co/p4BRX8s" alt="Jai Marachekku Oil Logo" id="logo">
+        <h1>Jai Marachekku Oil</h1>
+        <p>Pure Cold-Pressed Oils for a Healthier Life</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Jai Marachekku Oil offers 100% pure, cold-pressed oils with numerous health benefits. Our oils are extracted using traditional methods to ensure maximum purity and quality.</p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product">
+            <h3>Coconut Oil</h3>
+            <img src="https://i.ibb.co/pxJz9Qv/coconut-oil.jpg" alt="Coconut Oil">
+            <p>Our pure coconut oil is rich in nutrients and is perfect for cooking, skin, and hair care.</p>
+        </div>
+        <div class="product">
+            <h3>Groundnut Oil</h3>
+            <img src="https://i.ibb.co/t2vqwL8/groundnut-oil.jpg" alt="Groundnut Oil">
+            <p>Cold-pressed groundnut oil that retains the natural flavor and nutrients, ideal for all types of cooking.</p>
+        </div>
+        <div class="product">
+            <h3>Sesame Oil</h3>
+            <img src="https://i.ibb.co/yXJhzK1/sesame-oil.jpg" alt="Sesame Oil">
+            <p>Our sesame oil is loaded with antioxidants and provides numerous health benefits.</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits">
+        <h2>Health Benefits of Cold-Pressed Oils</h2>
+        <ul>
+            <li>Retains natural nutrients and flavor.</li>
+            <li>Rich in antioxidants and vitamins.</li>
+            <li>Free from chemicals and preservatives.</li>
+            <li>Supports heart health and overall wellness.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: 8610866405</p>
+        <p>Address: <a href="https://www.google.com/maps/search/?api=1&query=Jai+Oils+Rangapuram+Vellore" target="_blank">Jai Oils, Rangapuram, Vellore</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jai Marachekku Oil. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+CSS 
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header img#logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+.product {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 5px solid #4CAF50;
+}
+
+#contact a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+CREATE A CALCULATOR 
+
+HTML CODE 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display"></div>
+        <div class="buttons">
+            <button class="btn" onclick="clearDisplay()">C</button>
+            <button class="btn" onclick="appendToDisplay('/')">/</button>
+            <button class="btn" onclick="appendToDisplay('*')">*</button>
+            <button class="btn" onclick="appendToDisplay('-')">-</button>
+            <button class="btn" onclick="appendToDisplay('7')">7</button>
+            <button class="btn" onclick="appendToDisplay('8')">8</button>
+            <button class="btn" onclick="appendToDisplay('9')">9</button>
+            <button class="btn" onclick="appendToDisplay('+')">+</button>
+            <button class="btn" onclick="appendToDisplay('4')">4</button>
+            <button class="btn" onclick="appendToDisplay('5')">5</button>
+            <button class="btn" onclick="appendToDisplay('6')">6</button>
+            <button class="btn" onclick="calculateResult()">=</button>
+            <button class="btn" onclick="appendToDisplay('1')">1</button>
+            <button class="btn" onclick="appendToDisplay('2')">2</button>
+            <button class="btn" onclick="appendToDisplay('3')">3</button>
+            <button class="btn" onclick="appendToDisplay('.')">.</button>
+            <button class="btn zero" onclick="appendToDisplay('0')">0</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+CSS CODE 
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.display {
+    background: #333;
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+    text-align: right;
+    border-bottom: 1px solid #ccc;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.btn {
+    background: #eee;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.btn:active {
+    background: #ccc;
+}
+
+CREATE A LANDING PAGE 
+
+HTML CODE 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Welcome to Our Landing Page</h1>
+            <p>Your gateway to amazing content.</p>
+            <a href="#learn-more" class="cta-button">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section class="intro">
+                <h2>About Us</h2>
+                <p>We provide high-quality products and services to our customers. Our mission is to deliver exceptional experiences and results.</p>
+            </section>
+
+            <section class="services">
+                <div class="service-item">
+                    <h3>Service One</h3>
+                    <p>Description of service one goes here. It's a great service that helps with XYZ.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Service Two</h3>
+                    <p>Description of service two goes here. This service provides ABC solutions.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Service Three</h3>
+                    <p>Description of service three goes here. Offering top-notch support and features.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+CSS CODE 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #4A90E2;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 30px;
+    font-size: 1.2em;
+}
+
+.cta-button {
+    text-decoration: none;
+    color: white;
+    background: #E94E77;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.cta-button:hover {
+    background: #D83A5E;
+}
+
+main {
+    background: #f4f4f4;
+    padding: 40px 0;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service-item {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.service-item h3 {
+    margin-top: 0;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
